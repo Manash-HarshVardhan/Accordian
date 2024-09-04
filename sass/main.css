@@ -73,4 +73,37 @@
   color: #000;
   text-decoration: none;
   border-bottom: 1px solid #747678;
+}
+
+@media only screen and (max-width: 599px) {
+  .accrordian {
+    overflow-y: auto;
+  }
+  .accrordian__question--heading {
+    font-size: 1.5rem;
+    line-height: 120%;
+    margin-top: 20px;
+  }
+  .accrordian__question__no {
+    font-size: 2rem;
+  }
+  .accrordian__answer {
+    margin-top: 10px;
+    padding-top: 0px;
+    padding-left: 0;
+  }
+  .accrordian__answer p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+  .accrordian td p:nth-child(1) {
+    font-size: 1rem;
+    line-height: 0;
+  }
+  .accrordian td a {
+    font-size: 0.9rem;
+  }
+  .container {
+    width: 97vw;
+  }
 }/*# sourceMappingURL=main.css.map */

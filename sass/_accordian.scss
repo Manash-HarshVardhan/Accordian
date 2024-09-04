@@ -67,3 +67,40 @@
         border-bottom: 1px solid #747678;
        }
 }
+
+@media only screen and (max-width: 599px) {
+    .accrordian{
+        overflow-y: auto;
+       &__question--heading{
+            font-size: 1.5rem;
+            line-height: 120%;
+            margin-top: 20px;
+        }
+       &__question__no{
+        font-size: 2rem;
+       }
+
+       &__answer {
+        margin-top: 10px;
+        padding-top: 0px; 
+         padding-left: 0;
+         p{
+            margin-block-start: 0;
+            margin-block-end: 0;
+         }
+       }
+
+       td p:nth-child(1){
+        font-size: 1rem;
+        line-height: 0;
+       }
+       td a{
+        font-size: 0.9rem;
+        
+       }
+    }
+    
+    .container{
+        width: 97vw;
+    }
+}
