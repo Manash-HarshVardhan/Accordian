@@ -6,7 +6,7 @@
     
        border-bottom: 1px solid #c9c9ce;
        padding: 10px;
-       &__question{
+       &__firstpart{
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -25,13 +25,13 @@
             }
             
        }
-       &__question__no{
+       &__firstpart__no{
         font-size: 3rem;
         font-weight: 500;
         color: #007dc5;
         padding-right: 1.5rem;
        }
-       &__answer{
+       &__secpart{
         transition: all 0.3s;
         overflow: hidden;
         max-height: 0;
@@ -71,16 +71,16 @@
 @media only screen and (max-width: 599px) {
     .accrordian{
         overflow-y: auto;
-       &__question--heading{
+       &__firstpart--heading{
             font-size: 1.5rem;
             line-height: 120%;
             margin-top: 20px;
         }
-       &__question__no{
+       &__firstpart__no{
         font-size: 2rem;
        }
 
-       &__answer {
+       &__secpart {
         margin-top: 10px;
         padding-top: 0px; 
          padding-left: 0;
@@ -116,9 +116,9 @@
       
       tr {
         display: flex;
-        flex: 0 0 50%; /* Two columns */
+        flex: 0 0 50%; //makes two col grow->0 shrink->0  flex-basis->50%
         flex-direction: column;
-        border: none; /* Remove borders between rows */
+        border: none;
       }
       
       td {
