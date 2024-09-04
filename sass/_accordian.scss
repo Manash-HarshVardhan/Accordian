@@ -103,4 +103,26 @@
     .container{
         width: 97vw;
     }
+
+
+    table {
+        display: block;
+      }
+      
+      tbody {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      
+      tr {
+        display: flex;
+        flex: 0 0 50%; /* Two columns */
+        flex-direction: column;
+        border: none; /* Remove borders between rows */
+      }
+      
+      td {
+        width: 100%;
+        border: 1px solid black;
+      }
 }
